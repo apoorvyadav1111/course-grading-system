@@ -1,0 +1,15 @@
+Name:		Apoorv Yadav
+Email:		ayadav7@binghamton.edu
+
+
+
+Status of the project:
+Completed
+
+
+Steps to Run:
+npm ci
+
+tsc
+
+npm run start

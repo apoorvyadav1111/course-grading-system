@@ -1,0 +1,26 @@
+{
+  "name": "prj4-sol",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel src/statics/index.html  --dist-dir=target --port 2346",
+    "clean": "shx rm -rf dist",
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "browserslist": [
+    "since 2022-08"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "cs544-js-utils": "https://sunybing:sunybing@zdu.binghamton.edu/cs544/lib/cs544-js-utils-latest.tgz",
+    "cs544-prj1-sol": "https://sunybing:sunybing@zdu.binghamton.edu/cs544/lib/cs544-prj1-sol-latest.tgz"
+  }
+}

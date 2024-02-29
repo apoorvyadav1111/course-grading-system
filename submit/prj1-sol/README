@@ -1,0 +1,81 @@
+Name:		Apoorv Yadav
+B-Number:	Bxxxxxxxxx
+Email:		ayadav7@binghamton.edu
+
+1. Status of the project:
+    All test cases are passing, Ready to Submit.
+
+
+
+> prj1-sol@1.0.0 pretest
+> npm run build
+
+
+> prj1-sol@1.0.0 build
+> tsc
+
+
+> prj1-sol@1.0.0 test
+> mocha --reporter-options maxDiffSize=128000 dist/test
+
+
+
+  formula functions
+    average after drop
+      ✔ must compute projects average after drop
+      ✔ must compute homework average after drop
+      ✔ must compute quiz average after drop
+      ✔ must detect error for an invalid category
+    weighted sum
+      ✔ must correctly compute weighted sum for one section
+      ✔ must correctly compute weighted sum for another section
+      ✔ must detect error for an invalid colId in weights
+      ✔ must propagate previous error
+    column functions
+      ✔ must compute max of error-free column
+      ✔ must propagate error when computing max of error column
+      ✔ must compute min of error-free column
+      ✔ must propagate error when computing min of error column
+      ✔ must compute count of error-free column
+      ✔ must propagate error when computing count of error column
+      ✔ must compute average of error-free column
+      ✔ must propagate error when computing average of error column
+
+  grades
+    upsert row
+      ✔ must return an empty raw table just after initialization
+      ✔ must add a single good row
+      ✔ must add multiple good rows
+      ✔ must replace an existing row
+      ✔ raw table row columns must be in order given by course-info
+      ✔ must not make any destructive changes
+      ✔ must detect adding a row with a missing id
+      ✔ must detect adding a row with a null entry
+      ✔ must not add row having col of kind='calc'
+      ✔ must not add row having col with val out of range
+      ✔ must not add row with bad col name
+      ✔ must not add row with an extra column
+      ✔ must not add row with a missing column
+      ✔ must detect multiple errors
+    add column
+      ✔ must successfully add a new empty column
+      ✔ raw table row columns must be in order given by course-info
+      ✔ must not modify previous table
+      ✔ must not add an exiting column
+      ✔ must not add an unknown column
+      ✔ must not add a stats column
+    patch
+      ✔ must patch correctly
+      ✔ must detect a bad rowId in patches
+      ✔ must detect a bad colId in patches
+      ✔ must detect out-of-range data in patches
+    full table
+      220 full table
+        ✔ must compare full table
+      cs544 full table
+        ✔ must compare full table
+        ✔ accessing full table should not mutate Grades
+
+
+  43 passing (103ms)
+

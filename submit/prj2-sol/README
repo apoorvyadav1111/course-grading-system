@@ -1,0 +1,42 @@
+Name:		Apoorv Yadav
+B-Number:	Bxxxxxxxxxx4
+Email:		ayadav7@binghamton.edu
+
+Submission Status: Ready to submit
+
+Test Cases:
+
+
+> prj2-sol@1.0.0 pretest
+> npm run build
+
+
+> prj2-sol@1.0.0 build
+> tsc
+
+
+> prj2-sol@1.0.0 test
+> mocha --reporter-options maxDiffSize=128000 dist/test
+
+
+
+  grades dao
+    ✔ loading raw-data must return that data
+    ✔ loaded data must persist
+    ✔ persisted data must get cleared
+    ✔ must add columns
+    ✔ must patch newly added column
+    upsert rows
+      ✔ must add a new row
+      ✔ must replace an existing row
+      ✔ must upsert rows into totally empty table
+    errors
+      ✔ adding row with valid column not in table must error
+      ✔ using a bad course-id for getGrades() errors BAD_ARG
+      ✔ adding a totally unknown column must result in an error
+      ✔ patching in an out-of-range grade must error
+
+
+  12 passing (2s)
+
+

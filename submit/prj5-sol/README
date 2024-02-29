@@ -1,0 +1,21 @@
+Name:		Apoorv Yadav
+Email:		ayadav7@binghamton.edu
+
+Status: Ready to submit
+
+Steps to Run:
+1. npm ci
+
+2. tsc
+ 
+3. npm start
+
+All functionalities working including:
+1. Get grades
+2. Patch correct grades
+3. list error when not a Number
+4. list error when not a valid range
+5. update grades when select different courseId
+6. update url on input.
+
+
